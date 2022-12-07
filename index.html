@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lan="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Random Quiz Webpage</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h3 id="highscores">View High Scores</h3>
+            <p id="timer"></p>
+        </header>
+        <main id="intro">
+            <section id="text1">
+                <h1>Coding Quiz Challenge</h1>
+                <p>Try to answer the questions displayed within the time limit.</p>
+                <p>The timer will be reduced by 10 seconds if you answer incorrectly.</p>
+                <button id="btn" onclick="startTimer()">START</button>
+            </section>
+        </main>
+        <section id="questionSection">
+            <h2 id="question"></h2>
+            <ol class = "clickableList">
+                <li>
+                    <button id="as1" class="AnswerQuestions" onclick="as1_click(this)"></button>
+                </li>
+                <li>
+                    <button id="as2" class="AnswerQuestions" onclick="as2_click(this)"></button>
+                </li>
+                <li>
+                    <button id="as3" class="AnswerQuestions" onclick="as3_click(this)"></button>
+                </li>
+                <li>
+                    <button id="as4" class="AnswerQuestions" onclick="as4_click(this)"></button>
+                </li>
+            </ol>
+        </section>
+        <section id="theEnd">
+            <h2> GAME OVER</h2>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
