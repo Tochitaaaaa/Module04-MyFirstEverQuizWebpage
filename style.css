@@ -72,3 +72,8 @@ h1 {
 #questionSection,#theEnd {
     display: none;
 }
+
+#theEnd, #resultado {
+    text-align: center;
+    margin: 100px;
+}

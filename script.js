@@ -12,6 +12,7 @@ var question = document.getElementById("question");
 var counter = 60;
 var questionIndex = 0;
 var timeReduced = null;
+var resultScore = document.getElementById("resultado")
 
 function startTimer(){
     timeReduced = setInterval(function(){
@@ -49,34 +50,34 @@ function showQuestion1Data() {
 }
 
 function showQuestion2Data() {
-  question.innerHTML="hi2";
-  as1.innerHTML="Random numbers";
-  as2.innerHTML="Hyper Text Markup Language";
+  question.innerHTML="When the user clicks a button, _________ is triggered.";
+  as1.innerHTML="a method";
+  as2.innerHTML="a setting";
   as2.removeAttribute("data-is-correct");
-  as3.innerHTML="Hot Mail";
+  as3.innerHTML="an event";
   as3.setAttribute("data-is-correct",true)
-  as4.innerHTML="How to Make Lasagna";
+  as4.innerHTML="Ha property";
   questionIndex=2;
 }
 
 function showQuestion3Data() {
-  question.innerHTML="hi3";
-  as1.innerHTML="Random numbers";
-  as2.innerHTML="Hyper Text Markup Language";
-  as3.innerHTML="Hot Mail";
+  question.innerHTML="Pseudocode is:";
+  as1.innerHTML="data that have been encoded for security.";
+  as2.innerHTML="a program that doesn’t work";
+  as3.innerHTML="the obscure language computer personnel use when speaking.";
   as3.removeAttribute("data-is-correct");
-  as4.innerHTML="How to Make Lasagna";
+  as4.innerHTML="a description of an algorithm similar to a computer language";
   as4.setAttribute("data-is-correct",true)
   questionIndex=3;
 }
 
 function showQuestion4Data() {
-  question.innerHTML="hi4";
-  as1.innerHTML="Random numbers";
+  question.innerHTML="An algorithm is defined as:";
+  as1.innerHTML="a logical sequence of steps that solve a problem.";
   as1.setAttribute("data-is-correct",true)
-  as2.innerHTML="Hyper Text Markup Language";
-  as3.innerHTML="Hot Mail";
-  as4.innerHTML="How to Make Lasagna";
+  as2.innerHTML="a mathematical formula that solves a problem.";
+  as3.innerHTML="a tempo for classical music played in a coda.";
+  as4.innerHTML="a tool that designs computer programs and draws the user interface.";
   as4.removeAttribute("data-is-correct");
   questionIndex=4;
 }
@@ -133,6 +134,7 @@ function stopTimer(){
     endOfQuiz.style.display="block";
     questionSection.style.display= "none";
     highScoresPage.style.display="block";
+    resultScore.style.display="block";
 }
 
 
